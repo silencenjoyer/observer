@@ -1,0 +1,14 @@
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: ./php/Dockerfile
+    command: bash -c "cd /app && composer install && composer test-coverage"
+    volumes:
+      - ../../:/app
+    networks:
+      - test
+
+networks:
+  test:
+  default:

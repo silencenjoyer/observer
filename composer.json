@@ -1,0 +1,42 @@
+{
+  "name": "silencenjoyer/observer",
+  "description": "Realization of an observer for a system of events.",
+  "keywords": [
+    "silencenjoyer",
+    "observer"
+  ],
+  "homepage": "https://github.com/silencenjoyer/observer",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Andrew Gebrich",
+      "email": "an_gebrich@outlook.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Silencenjoyer\\Observer\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Silencenjoyer\\Observer\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
